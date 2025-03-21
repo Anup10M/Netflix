@@ -4,13 +4,17 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Apflix</title>
-	<link rel="stylesheet" type="text/css" href="Apflix.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=notifications" />
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=notifications" />
+	<link rel="stylesheet" href="Apflix.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=group" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css">
+	<link rel="icon" type="image/png" href="topnotch.jpg">
+
 
 </head>
 <body> 
-	<video src="intro.mp4" id="intro-video" autoplay muted></video>
+
 	<div class="main">
 		<div class="navigation">
 			<div class="menu">
@@ -22,38 +26,227 @@
 			</div>
 			<div class="profiles">
 				<span class="material-symbols-outlined friends" style="font-size: 29px;">group</span>
-				<img src="noti.png" id="noti">
+				<img style="cursor: pointer;" src="noti.png" id="noti">
 				<img src="pf.jpg" id="pf"> 
 			</div>
 		</div>
 		<div class="intro">
+			
 			<div class="text">
 				<div class="content">
-					<h1>Avengers Endgame</h1>
-					
-					<br>
-					<p id="about">
-						Avengers: Endgame is a 2019 superhero film and the epic conclusion to the Infinity Saga in the Marvel Cinematic Universe. Directed by the Russo brothers, the movie follows the Avengers as they attempt to undo the devastating effects of Thanos' snap, which wiped out half of all life in the universe. With time travel, emotional sacrifices, and an epic final battle, the film delivers a thrilling mix of action, drama, and nostalgia.
-					</p>
-					<button></button>
+					<h1>Spider-Man: <br> Far From Home</h1>
+					<button class="first-button"><i class='bx bx-play' ></i>   Play</button>
+					<button class="second-button"><i class='bx bx-list-plus'></i>   My list</button>
+					<div class="overview">
+						<h2 class="over-text">Overview</h2>
+						<img class="a1" src="over.jpg">
+						<img class="a2" src="over2.jpg">
+						<img class="a3" src="over3.jpg">
+							<p class="fr e1">DETAIL</p>
+							<p class="fr e2">TRAILER</p>
+							<p class="fr e3">PART</p>
+							<p class="fr e4">CAST</p>
+					</div>
 				</div>
-				<div class="icons-list"></div>
 			</div>
 		</div>
-		<div class="continue-watiching">
-			<div class="poster"></div>
-			<div class="about-movie"></div>
+		<div class="continue-watching">
+		
+			<div class="poster">
+				<h1 class="continue-text"> <i>|</i> Continue Watching Avengers Endgame </h1>
+				<img class="watch" src="continue.jpg">
+				<img class="line" src="line.png">
+			</div>
+			<div class="about-movie">
+				<h1 class="Title-movie">Avengers Endgame</h1>
+				<div class="icons-cont">
+				<i class='bx bxs-time-five'></i>
+				<p class="time-movie">2h 28m</p>
+				<i class='bx bxs-star' ></i>
+				<p class="rating">4.6(80k Rating)</p>
+			</div>
+			<div class="last-cont">
+				<p class="story-endgame">Avengers: Endgame follows the aftermath of Infinity War, where Thanos wipes out half of all life using the Infinity Stones. The remaining Avengers, devastated by their loss, devise a plan to undo the destruction. Five years later, Ant-Man returns from the Quantum Realm and suggests time travel to retrieve the Infinity Stones before Thanos can use them. Splitting into teams, they revisit key moments in the past to collect the Stones. After successfully assembling the Infinity Gauntlet, Hulk reverses the Snap. However, a past version of Thanos travels to the present, leading to a climactic battle. Iron Man sacrifices himself to defeat Thanos and his army. With the universe restored, Captain America returns the Stones and chooses to live a full life in the past, passing his shield to Falcon. The film ends with the Avengers mourning their losses while looking toward the future.</p>
+				<button class="Keep-w">Keep Watching</button>
+				<button class="mylist2">My list</button>
+			</div>
+			</div>
 		</div>
-		<div class="favourite">
-			<div class="first-movie"></div>
-			<div class="second-movie"></div>
-			<div class="third-movie"></div>
-			<div class="forth-movie"></div>
+		<div class="movie-list">
+			<div class="title-for-movie"> 
+				<h1> <i class="ap">|</i> Most Popular Movies of 2024</h1>
+			</div>
+			<div class="movies">
+
+				<div class="movie1 group-m">
+					<div class="dark-black black"></div>
+					<div class="image-group">
+					<img class="mv1" src="m1.jpg">
+				</div>
+				<div class="Movies-discription">
+					<h1>Venom</h1>
+					<span>
+						<i class='bx bx-time-five'></i> 
+					120m | Action</span>
+				</div>
+				</div>
+				<div class="movie2 group-m">
+					<div class="image-group">
+					<img class="mv2" src="m2.jpg">
+				</div>
+				<div class="Movies-discription">
+					<h1>Black Panther</h1>
+					<span><i class='bx bx-time-five'>
+					</i> 112m | Action
+				</span>
+				</div>
+				</div>
+				<div class="movie3 group-m">
+					<div class="image-group">
+						<img class="mv3" src="m3.jpg">
+					</div>
+					<div class="Movies-discription">
+					<h1>Batmen Vs Superman</h1>
+					<span>
+						<i class='bx bx-time-five'></i> 
+					100m | Action</span>
+				</div>
+				</div>
+				<div class="movie4 group-m">
+					<div class="image-group">
+					<img class="mv4" src="m4.jpg">
+				</div>
+				<div class="Movies-discription">
+					<h1>John Wick 2</h1>
+					<span>
+						<i class='bx bx-time-five'></i> 
+					95m | Action</span>
+				</div>
+				</div>
+				<div class="movie5 group-m">
+					<div class="image-group">
+					<img class="mv5" src="m5.jpg">
+				</div>
+				<div class="Movies-discription">
+					<h1>Aquaman</h1>
+					<span> 
+						<i class='bx bx-time-five'></i>
+						 100m | Action</span>
+				</div>
+				</div>
+				<div class="movie6 group-m">
+					<div class="image-group">
+					<img class="mv6" src="m6.jpg">
+				</div>
+				<div class="Movies-discription">
+					<h1>Black Panther</h1>
+					<span>
+						<i class='bx bx-time-five'></i> 
+					112m | Action</span>
+				</div>
+				</div>
+				<div class="movie7 group-m">
+					<div class="image-group">
+					<img class="mv7" src="m7.jpg">
+				</div>
+				<div class="Movies-discription">
+					<h1>Thor</h1>
+					<span>
+						<i class='bx bx-time-five'></i>
+					 112m | Action</span>
+				</div>
+				</div>
+				<div class="movie8 group-m">
+					<div class="image-group">
+					<img class="mv8" src="m8.png">
+				</div>
+				<div class="Movies-discription">
+					<h1>Bumblebee</h1>
+					<span>
+						<i class='bx bx-time-five'></i>
+						 112m | Action</span>
+				</div>
+				</div>
+				<div class="movie9 group-m">
+					<div class="image-group">
+					<img class="mv9" src="m9.jpg">
+				</div>
+				<div class="Movies-discription">
+					<h1>Mortal Engins</h1>
+					<span>
+						<i class='bx bx-time-five'></i> 
+					112m | Action</span>
+				</div>
+				</div>
+				<div class="movie10 group-m">
+					<div class="image-group">
+					<img class="mv10" src="m10.jpg">
+				</div>
+				<div class="Movies-discription">
+					<h1>Underworld</h1>
+					<span>
+						<i class='bx bx-time-five'></i>
+					 112m | Action</span>
+				</div>
+				</div>
+				
+			</div>
 		</div>
-		<div class="top-rated">
+		<div class="Up-coming">
+			<div class="upper-text">
+				<i>|</i><h1>Up Coming</h1>
+			</div>
+			<div class="image-slider">
+				<div class="slide-images">
+					<div class="box-images">
+							<img class="img1" id="img1" src="coming1.jpg">
+					</div>
+					<div class="box-images">
+							<img class="img2" id="img2" src="coming2.jpg">
+					</div>
+					<div class="box-images">
+							<img class="img3" id="img3" src="coming3.jpg">
+					</div>
+					<div class="box-images">
+							<img class="img4"  id="img4" src="coming4.jpg">
+					</div>
+					<div class="box-images">
+							<img class="img5" id="img5" src="coming5.jpg">
+					</div>
+					<div class="box-images">
+							<img class="img6" id="img6" src="coming6.jpeg">
+					</div>
+					<div class="box-images">
+							<img class="img7"  id="img7" src="coming7.jpg">
+					</div>
+					<div class="box-images">
+							<img class="img8" id="img8" src="coming8.jpg">
+
+					</div>
+					<div class="box-images">
+							<img class="img9" id="img9" src="coming9.jpg">
+					</div>
+					<div class="box-images">
+							<img class="img10" id="img10" src="coming10.jpg">
+					</div>
+				</div>
+				<div class="button-slide">
+					 <a class="left">
+        			<i class='bx bxs-chevron-left'  id="lf"></i>
+   					 </a>
+    				<a  class="right">
+       				 <i class='bx bx-chevron-right' id="rg" ></i>
+    				</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
 			
 		</div>
+
 	</div>
-	<script type="text/javascript" src="Apflix.js"></script>
+
+
+		<script type="text/javascript" src="Apflix.js"></script>
 </body>
 </html>
