@@ -14,12 +14,38 @@
 
 </head>
 <body> 
-
+		<video src="intro.mp4" id="intro-video" autoplay muted></video>
 	<div class="main">
+		<div class="left-search" id="left-search">
+			<div class="for-search">
+				<input class="search-inp" type="text" placeholder="Search Movies...">
+				<i class='bx bx-search search-icon'></i>
+			</div>
+			<div class="for-movies">
+				<div class="left-movies">
+					<h1 class="genres">Action</h1>
+					<h1 class="genres">Adventure</h1>
+					<h1 class="genres">Comedy</h1>
+					<h1 class="genres">Drama</h1>
+					<h1 class="genres">Horror</h1>
+				</div>
+				<div class="right-movies">
+					<h1 class="genres long-g">Science Fiction (Sci-Fi)</h1>
+					<h1 class="genres">Fantasy</h1>
+					<h1 class="genres">Thriller</h1>
+					<h1 class="genres">Mystery</h1>
+					<h1 class="genres">Romance</h1>
+				</div>
+				
+			</div>
+			<div class="sign-out">
+					<button><i class="out-cs">Sign Out</i></button>
+				</div>
+		</div>
 		<div class="navigation">
 			<div class="menu">
-				<img src="search.png" id="search" style="cursor: pointer;">
-				<p class="mn" style="cursor: pointer;">Menu</p>
+				<img src="search.png" id="search" onclick="bring()" style="cursor: pointer;">
+				<p class="mn" onclick="bring()" style="cursor: pointer;">Menu</p>
 			</div>
 			<div class="logo">
 				<img src="logo.png" id="netf" style="cursor: pointer;" >
@@ -34,14 +60,14 @@
 			
 			<div class="text">
 				<div class="content">
-					<h1>Spider-Man: <br> Far From Home</h1>
+					<h1 id="title">Spider-Man:	</h1> <br> <h1 id="title2">Far From Home</h1>
 					<button class="first-button"><i class='bx bx-play' ></i>   Play</button>
 					<button class="second-button"><i class='bx bx-list-plus'></i>   My list</button>
 					<div class="overview">
 						<h2 class="over-text">Overview</h2>
-						<img class="a1" src="over.jpg">
-						<img class="a2" src="over2.jpg">
-						<img class="a3" src="over3.jpg">
+						<img class="a1" id="fimg" src="over.jpg">
+						<img class="a2" id="fimg2" src="over2.jpg">
+						<img class="a3" id="fimg3" src="over3.jpg">
 							<p class="fr e1">DETAIL</p>
 							<p class="fr e2">TRAILER</p>
 							<p class="fr e3">PART</p>
@@ -53,7 +79,7 @@
 		<div class="continue-watching">
 		
 			<div class="poster">
-				<h1 class="continue-text"> <i>|</i> Continue Watching Avengers Endgame </h1>
+				<i>|</i><h1 class="continue-text">  Continue Watching Avengers Endgame </h1>
 				<img class="watch" src="continue.jpg">
 				<img class="line" src="line.png">
 			</div>
@@ -79,10 +105,10 @@
 			<div class="movies">
 
 				<div class="movie1 group-m">
-					<div class="dark-black black"></div>
 					<div class="image-group">
-					<img class="mv1" src="m1.jpg">
-				</div>
+						<img class="mv1 img-mv" src="m1.jpg">
+						<i class='bx bx-play-circle'></i>
+					</div>
 				<div class="Movies-discription">
 					<h1>Venom</h1>
 					<span>
@@ -92,7 +118,8 @@
 				</div>
 				<div class="movie2 group-m">
 					<div class="image-group">
-					<img class="mv2" src="m2.jpg">
+					<img class="mv2 img-mv" src="m2.jpg">
+					<i class='bx bx-play-circle'></i>
 				</div>
 				<div class="Movies-discription">
 					<h1>Black Panther</h1>
@@ -103,7 +130,8 @@
 				</div>
 				<div class="movie3 group-m">
 					<div class="image-group">
-						<img class="mv3" src="m3.jpg">
+						<img class="mv3 img-mv" src="m3.jpg" onmouseover="showplay()" onmouseleave="hideplay()">
+						<i class='bx bx-play-circle'></i>
 					</div>
 					<div class="Movies-discription">
 					<h1>Batmen Vs Superman</h1>
@@ -114,7 +142,8 @@
 				</div>
 				<div class="movie4 group-m">
 					<div class="image-group">
-					<img class="mv4" src="m4.jpg">
+					<img class="mv4 img-mv" src="m4.jpg" onmouseover="showplay()" onmouseleave="hideplay()">
+					<i class='bx bx-play-circle'></i>
 				</div>
 				<div class="Movies-discription">
 					<h1>John Wick 2</h1>
@@ -125,7 +154,8 @@
 				</div>
 				<div class="movie5 group-m">
 					<div class="image-group">
-					<img class="mv5" src="m5.jpg">
+					<img class="mv5 img-mv" src="m5.jpg" onmouseover="showplay()" onmouseleave="hideplay()">
+					<i class='bx bx-play-circle'></i>
 				</div>
 				<div class="Movies-discription">
 					<h1>Aquaman</h1>
@@ -135,8 +165,9 @@
 				</div>
 				</div>
 				<div class="movie6 group-m">
-					<div class="image-group">
-					<img class="mv6" src="m6.jpg">
+					<div class="image-group" >
+					<img class="mv6 img-mv" src="m6.jpg" onmouseover="showplay()" onmouseleave="hideplay()">
+					<i class='bx bx-play-circle'></i>
 				</div>
 				<div class="Movies-discription">
 					<h1>Black Panther</h1>
@@ -146,8 +177,9 @@
 				</div>
 				</div>
 				<div class="movie7 group-m">
-					<div class="image-group">
-					<img class="mv7" src="m7.jpg">
+					<div class="image-group"> 
+					<img class="mv7 img-mv" src="m7.jpg" onmouseover="showplay()" onmouseleave="hideplay()">
+					<i class='bx bx-play-circle'></i>
 				</div>
 				<div class="Movies-discription">
 					<h1>Thor</h1>
@@ -158,29 +190,34 @@
 				</div>
 				<div class="movie8 group-m">
 					<div class="image-group">
-					<img class="mv8" src="m8.png">
+					<img class="mv8 img-mv" src="m8.png">
+					<i class='bx bx-play-circle'></i>
 				</div>
 				<div class="Movies-discription">
 					<h1>Bumblebee</h1>
 					<span>
 						<i class='bx bx-time-five'></i>
+
 						 112m | Action</span>
 				</div>
 				</div>
 				<div class="movie9 group-m">
 					<div class="image-group">
-					<img class="mv9" src="m9.jpg">
+					<img class="mv9 img-mv" src="m9.jpg">
+					<i class='bx bx-play-circle'></i>
 				</div>
 				<div class="Movies-discription">
 					<h1>Mortal Engins</h1>
 					<span>
 						<i class='bx bx-time-five'></i> 
+
 					112m | Action</span>
 				</div>
 				</div>
 				<div class="movie10 group-m">
 					<div class="image-group">
-					<img class="mv10" src="m10.jpg">
+					<img class="mv10 img-mv" src="m10.jpg">
+					<i class='bx bx-play-circle'></i>
 				</div>
 				<div class="Movies-discription">
 					<h1>Underworld</h1>
@@ -241,12 +278,48 @@
 			</div>
 		</div>
 		<div class="footer">
-			
+			<div class="ready-to">
+				<h1>Ready to watch?</h1>
+				<h2>Enter your email to create or reset your membership</h2>
+				<div class="elements-for-input">
+				<input type="email" name="emal" placeholder="Enter Email........">
+				<button>Get started</button>
+			</div>
+			</div>
+			<div class="about-company">
+				<div class="netflix-logos">
+					<img src="logo.png" class="buttom-logo">
+					<p>contact@netflix.com</p>
+					<p class="number">+102(4323)</p>
+					<div class="social-logos">
+						<i class='bx bxl-facebook social'></i>
+						<i class='bx bxl-twitter social'></i>
+						<i class='bx bxl-instagram social'></i>
+					</div>
+				</div>
+				<div class="company">
+					<h1 class="for-und"><strong>Company</strong></h1>
+					<h1 class="for-und">About us</h1>
+					<h1 class="for-und">Contact Us</h1>
+					<h1 class="for-und">Investor Relation</h1>
+					<h1 class="for-und">Account</h1>
+					<h1 class="for-und">Careers</h1>
+				</div>
+				<div class="resources">
+					<h1 class="for-und"><strong>Resources</strong></h1>
+					<h1 class="for-und">Blog</h1>
+					<h1 class="for-und">FAQ'S</h1>
+					<h1 class="for-und">Help Center</h1>
+				</div>
+				<div class="legal">
+					<h1 class="for-und"><strong>Legal</strong></h1>
+					<h1 class="for-und">Privacy Policy</h1>
+					<h1 class="for-und">Cookies Preferences</h1>
+					<h1 class="for-und">Legal Notice</h1>	
+				</div>
+			</div>
 		</div>
-
 	</div>
-
-
 		<script type="text/javascript" src="Apflix.js"></script>
 </body>
 </html>

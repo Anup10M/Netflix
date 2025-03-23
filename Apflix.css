@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Funnel+Display:wght@300..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Funnel+Display:wght@300..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 *{
 	margin:0;
@@ -23,6 +24,165 @@ video{
 	min-height: 100vh;
 	height: auto;
 	position: relative;
+	overflow: hidden;
+}
+.left-search{
+	width: 38%;
+	background: url(searchbg.jpg)center/cover no-repeat;
+	height: auto;
+	min-height: 100vh;
+	position:fixed;
+	top: 0;
+	left: 0;
+	z-index: 29;
+	transform: translateX(-100%);
+	transition: all .3s ease-in-out;
+}
+.comeleft{
+	transform: translateX(0%);
+}
+.left-search::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0,.5);
+}
+.for-search input{
+	width: 49%;
+	outline: none;
+	border:0px;
+	border-radius: 30px;
+	height:55px;
+	background: transparent;
+	font-size: 19px;
+	background: white;
+	padding: 5px 10px;
+	padding-left: 20px;
+	color: grey;
+	position: relative;
+}
+.for-search .search-icon{
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background: red;
+	font-size: 30px;
+	color: white;
+	position: absolute;
+	right: 22%;
+  top: 14%;
+ 	transform: translate(-26px, -2px);
+	padding: 2%;
+}
+.for-movies{
+	width: 100%;
+	height: auto;
+	min-height: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 10%;
+}
+.for-movies .genres{
+	color: white;
+	font-family: "Rubik", sans-serif;
+	font-size: 25px;
+	width: fit-content;
+	position: relative;
+	height: fit-content;
+	font-weight: 500;
+	display: inline;
+	cursor: pointer;
+}
+.genres::before{
+
+  content: "";
+  z-index: -1;
+  width:0%;	
+  height: 143%;
+  background: black;
+  position: absolute;
+  display: inline;
+  transform: translate(-11px, -5px);
+  background: linear-gradient(294deg, rgba(255,0,0,0.6755077030812324) 0%, rgba(107,17,203,0.6558998599439776) 100%);
+  opacity: .7;
+  border: 3px solid #f11717 ;
+  border-radius: 6px;
+  transition: all .4s ease-in-out;
+}
+.sign-out{
+	width: 100%;
+	height: auto;
+	min-height: 10vh;
+	font-size:  20px;;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40%;
+}
+.sign-out button{
+	
+	text-align: center;
+	padding-left: 0px;
+	outline: none;
+	border: none;
+	position: relative;
+	background: white;
+	color: black;
+	overflow: hidden;
+	border-radius: 4px;
+}
+.out-cs{
+	width: 100%;
+	padding-top: 15px;
+	height: 100%;
+	z-index: 2;
+	font-size: 20px;
+	font-weight: 600;
+	display: inline-block;
+	position: relative;
+	color: black;
+	background: transparent;
+	font-family: "Roboto",sans-serif;
+	transition: all .1s ease-in-out;
+}
+.sign-out button::before{
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index:0;
+	background: linear-gradient(90deg, rgba(255,0,74,1) 0%, rgba(95,17,203,1) 100%);
+	transition: all  .4s ease-in-out;
+}
+.sign-out button:hover::before ,.out-cs:hover{
+	width: 100%;
+
+	color: white;
+}
+.sign-out button:hover{
+	width: 160px ;
+	box-shadow: 0px -1px 35px 10px rgb(255,0,74);
+	border-radius: 6px;
+}
+
+.genres:hover::before{
+	width: 125%;
+}
+.long-g:hover::before{
+	width: 110%;
+}
+.left-movies, .right-movies{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	row-gap: 30px;
+	z-index: 1;
 }
 .navigation{
 	overflow: hidden;
@@ -43,6 +203,14 @@ video{
 	display: flex;
 	align-items: center;
 
+}
+.for-search{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: auto;
+	margin-top: 130px;
 }
 #search{
 	height: 40px;
@@ -87,8 +255,20 @@ video{
 .intro{
 	min-height: 900px;
 	height: auto;
-	background: url(poster.jpg) center/cover no-repeat;
-
+	background: url(home3.jpg) center/cover no-repeat;
+	transition: all .2s ease-in-out;
+}
+.intro1{
+		min-height: 900px;
+	height: auto;
+	background: url(home1.jpg) center/cover no-repeat;
+	transition: all .2s ease-in-out;
+}
+.intro2{
+	min-height: 900px;
+	height: auto;
+	background: url(home2.jpg) center/cover no-repeat;
+	transition: all .2s ease-in-out;
 }
 .text{
 	height:900px;
@@ -97,10 +277,13 @@ video{
 .content{
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0, 0.29); 
+	background-color: rgba(0,0,0, 0.50); 
 	padding: 70px;
 	padding-top: 300px;
 
+}
+#title, #title2{
+	transition: all .2s ease-in-out;
 }
 .content h1{
 	margin-bottom: 34px;
@@ -111,6 +294,9 @@ video{
 	font-size:85px;
 	color: #fff;
 	display: block;
+}
+#title{
+	margin-bottom: 0px;
 }
 button {
   background-color:#ff0a09;
@@ -210,15 +396,33 @@ button {
 	color: red;
 }
 
-i{
-	color: red;
-}
+
 .continue-text{
 	color: white;
 	padding-left: 10px;
-
+	display: inline-block;
+	font-family: "Rubik" ,sans-serif;
+	transform: translateX(-111%);
+	transition: all .5s ease-in-out;
+	animation: textanim 1s ease-in forwards;
+	animation-iteration-count: 1;
+}
+ @keyframes textanim{
+ 	100%{
+ 		transform: translateX(0%);
+ 	}
+ }
+i{
+	color: red;
+	font-family:auto;
+	font-size:40px ;
+	font-weight: 700;
+	z-index: 5;
+	display: inline-block;
+	margin-left: 0px;
 }
 .poster{
+	overflow: hidden;
 	flex-basis: 50%;
 	width: 50%;
 	height: 100%;
@@ -306,6 +510,7 @@ i{
 	width: 100%;
 	height: auto;
 	min-height: 70vh;
+	margin-bottom: 5%;
 }
 .movies{
 	display: flex;
@@ -338,9 +543,6 @@ i{
 	width: 100%;
 	height: 100%;
 	transition: .4s ease-in-out;
-}
-.group-m img:hover{
-
 }
 .movie1,.movie2,.movie3,.movie4,.movie5,.movie6,.movie7,.movie8,.movie9,.movie10{
 	transition: .5s ease-in-out;
@@ -387,9 +589,10 @@ i{
 	min-height: 50vh;
 }
 .upper-text{
-	width: 100%;
+	width: 50%;
+	overflow: hidden;
 	height: 10em;
-	padding: 10px 125px;
+	margin: 10px 125px;
 	display: flex;
 	align-items: center;
 }
@@ -418,6 +621,59 @@ i{
 	width: 20%;
 	height: auto;
 	min-height: 400px;
+}
+.image-group{
+	overflow: hidden;
+	transition: all .2s ease-in-out;
+	position: relative;
+}
+.image-group::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+  width: 100%;
+	height: 100%;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+	background: rgba(0, 0, 0, .7);
+}
+.image-group:hover::before{
+	opacity: 1;
+}
+
+.bx-play-circle{
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: red;
+    width: 100%;
+    height: 100%;
+    font-size: 60px;
+    opacity: 0;
+      transition: all .2s ease-in-out;
+}
+.bx-play-circle::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+   left: 40%;
+   transition: all .2s ease-in-out;
+}
+.bx-play-circle:hover{
+	opacity: 1;
+}
+.typ{
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+.imgcontainer{
+	flex-basis: 80%;
+}
+.movie-about-container h1{
+	color: white;
 }
 .box-images img{
 	flex: 1 0 100%;
@@ -453,8 +709,8 @@ i{
 	border-radius: 50%;
   background:rgba(0, 0, 0, .8);		
   transition: .2s ease-in-out;
- 
 }
+
 .button-slide a:hover::before{
 	background: linear-gradient(90deg, rgba(255,0,198,1) 0%, rgba(241,9,130,1) 47%, rgba(226,19,40,1) 100%);
 	scale: 1;
@@ -479,18 +735,157 @@ i{
 }
 .upper-text h1{
 	padding-top: 3px;
+	font-size: 40px;
 	display: inline-block;
 	color: white;
 	font-family: "roboto",sans-serif;
 }
 .upper-text i{
-	font-size: 45px;
-	color:transparent;
+	font-size: 68px;
+	color: red;
 	font-weight: 900;
+	margin-left: 0px;
 }
 .footer{
 	width: 100%;
 	height: auto;
-	min-height: 50vh;
+	min-height: 70vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 40px;
 }
-
+.ready-to{
+	width: 100%;
+	height: 30vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 20px;
+	align-items: center;
+}
+.ready-to h1, .ready-to h2 {
+	color: white;
+	font-family: "Rubik", sans-serif;
+	font-weight: 500;
+}
+.elements-for-input{
+	width: 100%;
+	padding-left:33%;
+}
+.ready-to input{
+	width: 40%;
+	background: rgba(0, 0, 0, .5);
+	border: 1px solid grey;
+	font-size: 20px;
+	height: 60px;
+	color: white;
+	padding: 3px 10px;
+	outline: none;
+	border-radius: 10px;
+}
+.ready-to button{
+	padding: 0;
+}
+.about-company{
+	width: 100%;
+	height: auto;
+	min-height: 50vh;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+.netflix-logos, .company, .resources, .legal{
+	flex-basis: 25%;
+	height: auto;
+	min-height: 500px;
+}
+.netflix-logos{
+	display: flex;
+	align-items: flex-start;
+	padding: 3%;
+	padding-top: 0%;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+.netflix-logos img{
+width: 50%;
+}
+.netflix-logos p{
+	color: white;
+	text-decoration: underline;
+	font-size: 25px;
+	margin-top: -39px;
+}
+.netflix-logos .number{
+	margin-top: 12px;
+  font-size: 22px;
+	text-decoration: none;
+}
+.social-logos{
+	width: 70%;
+	margin-top: 30px;
+	display: flex;
+	height: 200px;
+}
+.social{
+	font-size: 40px;
+	color: white;
+	cursor: pointer;
+	margin-left: 15px;
+}
+.social-logos i{
+	height: fit-content;
+}
+.social::before{
+	position:relative;
+	content: "";
+	display: inline-block;
+  transition: all .3s ease-in-out;
+  border-radius: 50%;
+  width: 53px;
+  height: 53px;
+  transform: translate(-50%, -10%);	
+}
+.bxl-facebook:hover::before{
+	color: #106afe;
+}
+.bxl-twitter:hover::before{
+	color: #24a4f2;
+}
+.bxl-instagram:hover::before{
+	color: #c33b88;
+}
+.company, .resources, .legal{
+	color: white;
+	display: flex;
+	gap: 35px;
+	justify-content: flex-start;
+	flex-direction: column;
+	font-family: "Rubik",sans-serif;
+	padding: 20px 10px;
+}
+.company h1,.resources h1,.legal h1{
+	font-weight: 500;
+	position: relative;
+	font-size: 20px;
+	color: #c1c1c1;
+	cursor: pointer;
+	width: fit-content;
+}
+.company strong,.resources strong,.legal strong{
+	font-size: 25px;
+	color: white;
+}
+.for-und::before{
+	position:absolute;
+	content: "";
+	bottom: -10px;
+	width: 0%;
+	height: 4px;
+	transition: all .3s ease-in-out	;
+	background: linear-gradient(294deg, rgba(255,0,0,1) 0%, rgba(17,36,203,1) 100%);
+}
+.for-und:hover::before{
+	width: 100%;
+}
