@@ -1,0 +1,77 @@
+
+.navigation{
+	height: 60px;
+	padding:2px 10px;
+}
+ 
+.friends,#noti{
+	display: none;
+}
+#netf{
+	height: 90px;
+	width: 80px;
+}
+#pf{
+	width: 36px;
+	height: 36px;
+	margin-right: 15px;
+}
+
+#search{
+	display: none;
+}
+
+.bx-menu-alt-left{
+	font-size: 30px;
+	color: white;
+}
+	
+.intro,.intro1,.intro2{
+		min-height: 400px;
+		height: 400px;
+	}
+	.content{
+		padding: 30px 10px;
+		padding-top: 190px;
+    height: fit-content;
+	}
+	.first-button,.second-button{
+		width: 91px;
+    height: 43px;
+    font-size: 15px;
+	}
+	.second-button{
+		margin-left: 5px;
+	}
+	.bx-play,.bx-list-plus{
+		font-size: 28px !important;
+		transform: translate(-4px, -2px);
+	}
+	.left-search{
+		transform: translateX(-200%);
+		width: 100%;
+	}
+	#title{
+		margin-bottom: 0px;
+	}
+	#title,#title2{
+		font-size: 35px;
+    margin-bottom: 10px;
+	}
+
+	.overview img{
+		width: 100px;
+		height: 100px;
+	}
+	.continue-watching{
+		flex-direction: column;
+	}
+	.watch img{
+		width: 90%;
+	}
+	.about-movie{
+		width: 100%;
+	}
+	.poster{
+		overflow:visible;
+	}

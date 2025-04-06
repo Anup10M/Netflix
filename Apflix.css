@@ -26,6 +26,9 @@ video{
 	position: relative;
 	overflow: hidden;
 }
+.main2{
+	display: block;
+}
 .left-search{
 	width: 38%;
 	background: url(searchbg.jpg)center/cover no-repeat;
@@ -218,6 +221,9 @@ video{
 	margin-left:20px ;
 	display: inline-block;
 }
+.bx-menu-alt-left{
+	font-size: 0px;
+}
 .mn{
 	color: white;
 	display: inline-block;
@@ -285,6 +291,7 @@ video{
 #title, #title2{
 	transition: all .2s ease-in-out;
 }
+
 .content h1{
 	margin-bottom: 34px;
 	font-family: "Rubik", sans-serif;
@@ -889,3 +896,5 @@ width: 50%;
 .for-und:hover::before{
 	width: 100%;
 }
+
+

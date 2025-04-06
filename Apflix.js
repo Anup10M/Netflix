@@ -1,4 +1,5 @@
 
+
         const carousel=document.querySelector('.slide-images');
         firstimg = carousel.querySelectorAll(".box-images")[0]; 
         arrowIcon = document.querySelectorAll('.button-slide i');
@@ -39,8 +40,15 @@
  function bring() {
      leftsearch.classList.toggle("comeleft");
  }
-    setTimeout(function() {
+
+    etTimeout(function(){
+         document.querySelector('.main').classList.add('main2');
+     },4000)
+
+
+    etTimeout(function() {
     document.getElementById("intro-video").style.display = "none";
+   
 }, 4400);
 
 
